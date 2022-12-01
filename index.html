@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+        let avion = {
+            // Par key-value o clave-valor
+            vuela : true,
+            cantidad_butacas: 200,
+            origen: 'Argentina',
+            destino: "Qatar",
+            nombre_pilotos: ['Juan', 'Romina', 'Nacho'],
+            instalaciones: {
+                banios: 2,
+                bar: 1
+            },
+            asientos: [
+                1, 2 , 3
+            ]
+        }
+
+        let asiento = {
+            numero: 2,
+            disponible: true,
+            esCama: false,
+            ubicacion: "pasillo"
+        }
+
+        let persona = {
+            nombre: "Juan",
+            pais_vive: "Argentina" ,
+            asiento_avion: 2
+        }
+
+
+        let { destino, origen } = avion // destructuring
+
+        destino = "Francia"
+
+        console.log(`El destino del avion es ${destino}`)
+        console.log(`La piloto es  ${avion.nombre_pilotos[1]}`)
+        console.log(`La cantidad de baños es ${avion.instalaciones.banios}`)
+*/
+/*
+        let animal = { // Object literal
+            especie: "tortuga",
+            genero: "f",
+            peso: 150,
+            origen: "Africa",
+            salta: true,
+            alimentacion: "vegetariana",
+            queAnimalEs: function (){
+                return `Este animal es una ${this.especie}`
+            },
+            saltaEsteAnimal: function(){
+                let resultado 
+                if(this.salta === true ){
+                    resultado = "Lo hace muy alto!!!"
+                }else{
+                    resultado =  "No esta preparado para saltar"
+                }
+                return resultado
+                // return this.salta ? "Lo hace muy alto!!!" : "No esta preparado para saltar"
+            }
+        }
+
+        console.log(animal.queAnimalEs())
+        console.log(animal.saltaEsteAnimal())
+*/
+
+/*
+    // Prototipos / Constructores 
+    function Animal(){
+        this.especie="",
+        this.genero="",
+        this.peso=0,
+        this.origen=""
+        this.salta=false,
+        this.queAnimalEs = function(){
+            return `Este animal es una ${this.especie}`
+        },
+        this.saltaEsteAnimal = function(){
+            let resultado 
+            if(this.salta === true ){
+                resultado = "Lo hace muy alto!!!"
+            }else{
+                resultado =  "No esta preparado para saltar"
+            }
+            return resultado
+            // return this.salta ? "Lo hace muy alto!!!" : "No esta preparado para saltar"
+        }
+    }
+
+    let animal1 = new Animal();
+    let animal2 = new Animal();
+    let animal3 = new Animal();
+    let animal4 = new Animal();
+
+    animal1.especie="Jirafa"
+    animal2.especie="Tortuga"
+    animal3.especie="Leon"
+    animal4.especie="tigre"
+
+    console.log(animal1.especie)
+    console.log(animal2.especie)
+    console.log(animal3.especie)
+*/
+
+        function DatosBancarios(){
+            this.nombrePersona="",
+            this.saldo=0,
+            this.nroCuenta="",
+            this.ganancias=false,
+            this.agregaSaldo= function (plataIngreso){
+                this.saldo = this.saldo + plataIngreso
+            },
+            this.muestraSaldo = function(){
+                return this.saldo
+            },
+            this.validaSaldo = function(plataEgreso){
+                if(this.saldo - plataEgreso >= 0 ){
+                    return true
+                }else{
+                    return false
+                }
+            },
+            this.sacaDiferencia = function(){
+                this.saldo = this.saldo - plataEgreso
+            },
+            this.muestraSiTieneSaldo = function(plataEgreso){
+                if(this.validaSaldo(plataEgreso) ){
+                    console.log("Podes sacar!")
+                    this.sacaDiferencia()
+                }else{
+                    console.log("No tenes saldo suficiente")
+                }
+            }
+        }
+
+        let cuentaNueva = new DatosBancarios()
+
+        cuentaNueva.agregaSaldo(500)
+        cuentaNueva.agregaSaldo(500)
+        console.log(cuentaNueva.muestraSaldo())
+        cuentaNueva.agregaSaldo(500)
+        cuentaNueva.agregaSaldo(500)
+        console.log(cuentaNueva.muestraSaldo())
+        cuentaNueva.muestraSiTieneSaldo(1500)
+        console.log(cuentaNueva.muestraSaldo())
+        cuentaNueva.muestraSiTieneSaldo(1500)
+        console.log(cuentaNueva.muestraSaldo())
+
+
+        
+
+    </script>
+</body>
+</html>
