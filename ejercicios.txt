@@ -1,0 +1,24 @@
+1) Genera el constructor Jugador. Debe contener el nombre, 
+el apellido, el equipo en el que juega, el numero y 
+la cantidad de goles que lleva en la temporada.
+Genera el método obtenerNombre, retornara el nombre y el equipo para el que juega constructor
+la siguiente leyenda "El jugador (nombre de jugador) juega en (equipo)"
+Genera el método cantidadGoles, en donde retornará: Si hizo mas de 100 goles la leyenda 
+"Es un goleador!", si hizo entre 1 y 99 la leyenda "Hizo algunos goles" y sino hizo "Seguro es arquero"
+
+
+2) Genera el constructor Inmobiliaria. Debe contener el nombre (si es casa o departamento),
+la direccion, el barrio, cantidad de metros cuadrados, cantidad de habitaciones, cantidad de 
+dormitorios, la cantidad de baños, ¿tiene patio? (true o false),  el costo de alquiler.
+Genera los métodos: 
+obtenerDatosGenerales. Retornara la leyenda "Esta {propiedad} contiene {cantida de habitaciones}
+y el costo de alquiler es {costo de alquiler}" 
+
+obtenerCostoIngreso: Se calculará en base a la cantidad de habitaciones sobre el costo de 
+alquiler. Si tiene mas de 2 baños, el ingreso será la suma de dos alquileres. Si 
+tiene solo un baño será de un alquiler y medio. Si tiene patio se agregará un alquiler mas.
+
+
+
+
+
